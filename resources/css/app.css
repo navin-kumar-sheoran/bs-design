@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+      font-size: 10px;
+      font-family: Roboto, sans-serif;
+    }
+  }
+@layer utilities {
+
+.container {
+    @apply xl:w-1170 lg:w-1000 md:w-750 sm:w-full pr-15 pl-15 mr-auto ml-auto;
+ }  
+ .lf_container {
+    @apply xl:w-784 lg:w-652 md:w-540 sm:w-320 pr-15 pl-15 mr-auto ml-auto;
+ }  
+ 
+ .hide_scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide_scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.webkit-box-css{
+    display: -webkit-inline-box;
+}
+.main_nav_dropdown li:before {
+    background: #fffcfc;
+    content: "";
+    height: 14px;
+    position: absolute;
+    top: 5px;
+    left: -12px;
+    width: 1px;
+    @apply md:hidden block
+}
+.menu-xs-font {
+    font: 500 14px/100% Roboto,sans-serif;
+}
+.menu-font {
+    font: 600 15px/120% Roboto,sans-serif;
+}
+.art-font-big {
+     font: 600 50px/120% Roboto,sans-serif;
+}
+
+.art-font-small {
+    font: 500 24px/130% Roboto,sans-serif;
+}
+.summary-font-big {
+    font: 600 22px/150% Roboto,sans-serif;
+}
+
+.summary-font-small {
+    font: 400 16px/150% Roboto,sans-serif;
+}
+.desc-font-big {
+    font: 400 19px/160% Roboto,sans-serif;
+}
+
+.desc-font-small {
+    font: 400 18px/150% Roboto,sans-serif;
+}
+
+.lf-font-big {
+    font: 500 18px/160% Roboto,sans-serif;
+}
+
+.lf-font-small {
+    font: 500 16px/150% Roboto,sans-serif;
+}
+
+.highlight-box-font {
+    font: 500 18px/120% Roboto,sans-serif;
+}
+.highlight-title-font {
+    font: 600 20px/100% Roboto,sans-serif;
+}
+
+
+.icon-new::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    height: 20px;
+    width: 32px;
+
+    background: url(http://bollywood.in.ngrok.io/assets/images/new.svg) no-repeat 0 0;
+    @apply lg:block hidden
+}
+}
